@@ -20,6 +20,7 @@ app.use(history({
 }));
 app.use(staticFileMiddleware);
 
+app.get('/',staticFileMiddleware)
 
 var rooms = new Map()
 var Room = function (meetID) {
