@@ -74,7 +74,7 @@ export default {
     const notification = ref(null);
     const localStream = ref(null);
     const remoteStream = ref(new MediaStream());
-    const socket = io("http://localhost:5555");
+    const socket = io("/");
     var setNotification = (title, message) =>
       (notification.value = { title, message });
     var interval = setInterval(() => {
@@ -111,6 +111,7 @@ export default {
     var answerDescription;
     var iceCandidate = [];
 
+   
     async function loadMedia() {
       var stream = await navigator.mediaDevices.getUserMedia({
         audio: true,

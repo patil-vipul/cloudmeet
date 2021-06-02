@@ -8,7 +8,7 @@ const server = app.listen(port, () => {
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: "http://localhost:8080",
+        origins: ["http://localhost:8080","https://cloudmeet.vercel.app"],
     }
 })
 
