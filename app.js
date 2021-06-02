@@ -1,13 +1,14 @@
 const express = require('express');
 const history = require('connect-history-api-fallback');
 const app = express();
-const server = app.listen(() => {
+const port = 5555;
+const server = app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`);
 });
 
 const io = require("socket.io")(server, {
     cors: {
-        origins: ["http://localhost:8080","https://cloudmeet.vercel.app"],
+        origin: '*'
     }
 })
 
@@ -20,7 +21,6 @@ app.use(history({
 }));
 app.use(staticFileMiddleware);
 
-app.get('/',staticFileMiddleware)
 
 var rooms = new Map()
 var Room = function (meetID) {

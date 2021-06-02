@@ -16,11 +16,7 @@
     "socket.io-client": "^4.1.2",
     "uuid": "^8.3.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
