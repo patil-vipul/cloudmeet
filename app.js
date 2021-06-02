@@ -1,8 +1,7 @@
 const express = require('express');
 const history = require('connect-history-api-fallback');
 const app = express();
-const port = 5555;
-const server = app.listen(port, () => {
+const server = app.listen(() => {
     console.log(`Example app listening on port ${port}!`);
 });
 
