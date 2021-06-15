@@ -1,0 +1,14 @@
+---
+application:
+  name: "cloudmeet"
+  project: "Vip"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "Vip"
+routers:
+- name: "main-cloudmeet"
+  routes:
+  - application_name: "cloudmeet"
+    paths:
+    - "/*"
